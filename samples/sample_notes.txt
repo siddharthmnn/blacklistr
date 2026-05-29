@@ -1,0 +1,13 @@
+User reported a suspicious email.
+
+Links observed:
+https://paypal-login-secure-update.xyz/login
+
+Possible callback IP:
+185.199.111.153
+
+Email sender:
+security-alert@fake-paypal-support.com
+
+Another domain:
+verify-account-now.top

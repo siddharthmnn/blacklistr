@@ -1,0 +1,12 @@
+{
+    "target": "https://paypal-login-secure-update.xyz",
+    "type": "url",
+    "score": 60,
+    "severity": "MEDIUM",
+    "reasons": [
+        "Suspicious keyword: login",
+        "Suspicious keyword: secure",
+        "Suspicious keyword: update",
+        "Suspicious keyword: paypal"
+    ]
+}
