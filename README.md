@@ -124,5 +124,5 @@ MIT License
 
 Siddharth S Menon
 
-GitHub: https://github.com/siddharthmnn
+GitHub: https://github.com/siddharthmnn 
 LinkedIn: https://www.linkedin.com/in/siddharthmnn
