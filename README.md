@@ -117,3 +117,12 @@ Blacklistr started as a way to combine several common investigation tasks into a
 ## License
 
 MIT License
+
+---
+
+## Author
+
+Siddharth S Menon
+
+GitHub: https://github.com/siddharthmnn
+LinkedIn: https://www.linkedin.com/in/siddharthmnn
