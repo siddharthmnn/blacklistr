@@ -2,7 +2,7 @@
 
 A lightweight CLI-based threat triage toolkit for analyzing suspicious URLs, domains, IP addresses, and investigation notes.
 
-Blacklistr was built as a cybersecurity learning project to simulate basic analyst workflows. It performs simple risk analysis, extracts indicators of compromise (IOCs), stores investigation cases, and generates reports for later review.
+Blacklistr is a lightweight threat triage utility designed to help analyze suspicious URLs, domains, IP addresses, and investigation notes from a single command-line interface. It performs simple risk analysis, extracts indicators of compromise (IOCs), stores investigation cases, and generates reports for later review.
 
 ---
 
