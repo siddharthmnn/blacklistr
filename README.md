@@ -1,8 +1,10 @@
 # Blacklistr
 
-CLI-based cybersecurity threat triage toolkit for analyzing suspicious URLs, domains, IP addresses, and investigation notes.
+A lightweight CLI-based threat triage toolkit for analyzing suspicious URLs, domains, IP addresses, and investigation notes.
 
-Blacklistr was built as a cybersecurity learning project to simulate basic analyst workflows. It performs lightweight risk analysis, extracts indicators of compromise (IOCs), stores investigation cases, and generates reports.
+Blacklistr was built as a cybersecurity learning project to simulate basic analyst workflows. It performs simple risk analysis, extracts indicators of compromise (IOCs), stores investigation cases, and generates reports for later review.
+
+---
 
 ## Features
 
@@ -15,15 +17,48 @@ Blacklistr was built as a cybersecurity learning project to simulate basic analy
 - Fully offline operation
 - Simple command-line interface
 
+---
+
 ## Example Usage
 
-### Analyze a URL
+### Analyze a Suspicious URL
 
 ```bash
 python3 -m blacklistr.main scan https://paypal-login-secure-update.xyz
-Extract Indicators
+```
+
+### Extract Indicators from Notes
+
+```bash
 python3 -m blacklistr.main extract samples/sample_notes.txt
-Workflow
+```
+
+---
+
+## Example Output
+
+```text
+=== BLACKLISTR REPORT ===
+
+Target   : https://paypal-login-secure-update.xyz
+Type     : url
+Host     : paypal-login-secure-update.xyz
+
+Risk Score : 60/100
+Severity   : MEDIUM
+
+Reasons:
+ - Suspicious keyword: login
+ - Suspicious keyword: secure
+ - Suspicious keyword: update
+ - Suspicious keyword: paypal
+```
+
+---
+
+## Workflow
+
+```text
 Input
   ↓
 Classification
@@ -35,17 +70,50 @@ IOC Extraction
 Case Storage
   ↓
 Report Generation
-Why I Built It
+```
 
-While learning cybersecurity, I wanted a simple tool that could help triage suspicious indicators without relying on multiple websites or services. Blacklistr combines several basic analyst tasks into a single workflow and serves as a practical learning project.
+---
 
-Future Improvements
-WHOIS enrichment
-Passive DNS lookups
-Threat intelligence integrations
-VirusTotal integration
-Case history command
-Improved domain analysis
-License
+## Project Structure
+
+```text
+blacklistr/
+├── blacklistr/
+│   ├── main.py
+│   ├── scanner.py
+│   ├── scoring.py
+│   ├── indicators.py
+│   ├── storage.py
+│   └── reporter.py
+├── cases/
+├── reports/
+├── samples/
+└── README.md
+```
+
+---
+
+## Why I Built It
+
+While learning cybersecurity, I often found myself manually checking suspicious URLs, domains, and indicators across multiple websites and tools.
+
+Blacklistr started as a way to combine several common investigation tasks into a single workflow while helping me better understand threat triage and analyst processes. The goal was not to replace professional security tools, but to build something practical that I could use, improve, and explain in interviews.
+
+---
+
+## Future Improvements
+
+- WHOIS enrichment
+- Passive DNS lookups
+- Threat intelligence feed integration
+- VirusTotal integration
+- Improved domain analysis
+- Case history command
+- Log ingestion support
+- Additional report formats
+
+---
+
+## License
 
 MIT License
