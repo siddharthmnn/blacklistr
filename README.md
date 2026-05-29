@@ -2,20 +2,32 @@
 
 A lightweight CLI-based threat triage toolkit for analyzing suspicious URLs, domains, IP addresses, and investigation notes.
 
-Blacklistr is a lightweight threat triage utility designed to help analyze suspicious URLs, domains, IP addresses, and investigation notes from a single command-line interface. It performs simple risk analysis, extracts indicators of compromise (IOCs), stores investigation cases, and generates reports for later review.
+Blacklistr is a cybersecurity learning project focused on simulating basic analyst workflows. It performs risk analysis, extracts indicators of compromise (IOCs), stores investigation cases locally, and generates reports for later review.
 
 ---
 
 ## Features
 
-- URL, domain, and IP classification
-- Suspicious keyword detection
-- Risk scoring engine
-- IOC extraction from notes and logs
-- JSON case storage
-- Markdown report generation
-- Fully offline operation
-- Simple command-line interface
+* URL, domain, and IP classification
+* Suspicious keyword detection
+* Risk scoring engine
+* IOC extraction from notes and logs
+* JSON case storage
+* Markdown report generation
+* Fully offline operation
+* Simple command-line interface
+
+---
+
+## Screenshots
+
+### URL Analysis
+
+![URL Analysis](screenshots/scan.jpeg)
+
+### IOC Extraction
+
+![IOC Extraction](screenshots/extract.jpeg)
 
 ---
 
@@ -88,6 +100,7 @@ blacklistr/
 ├── cases/
 ├── reports/
 ├── samples/
+├── screenshots/
 └── README.md
 ```
 
@@ -95,34 +108,34 @@ blacklistr/
 
 ## Why I Built It
 
-While learning cybersecurity, I often found myself manually checking suspicious URLs, domains, and indicators across multiple websites and tools.
+While learning cybersecurity, I wanted a simple tool that could help me triage suspicious indicators without jumping between multiple websites and tools.
 
-Blacklistr started as a way to combine several common investigation tasks into a single workflow while helping me better understand threat triage and analyst processes. The goal was not to replace professional security tools, but to build something practical that I could use, improve, and explain in interviews.
+Blacklistr combines several common investigation tasks into a single workflow and helped me better understand threat triage, IOC extraction, and analyst-style reporting. The goal was not to replace professional security tools, but to build something practical that I could improve and explain in interviews.
 
 ---
 
 ## Future Improvements
 
-- WHOIS enrichment
-- Passive DNS lookups
-- Threat intelligence feed integration
-- VirusTotal integration
-- Improved domain analysis
-- Case history command
-- Log ingestion support
-- Additional report formats
+* WHOIS enrichment
+* Passive DNS lookups
+* Threat intelligence feed integration
+* VirusTotal integration
+* Improved domain analysis
+* Case history command
+* Log ingestion support
+* Additional report formats
+
+---
+
+## Author
+
+**Siddharth S Menon**
+
+* GitHub: https://github.com/siddharthmnn
+* LinkedIn: https://www.linkedin.com/in/siddharthmnn
 
 ---
 
 ## License
 
 MIT License
-
----
-
-## Author
-
-Siddharth S Menon
-
-GitHub: https://github.com/siddharthmnn 
-LinkedIn: https://www.linkedin.com/in/siddharthmnn
